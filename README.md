@@ -1,6 +1,6 @@
-#CSC301-Minerva-Copy
+# CSC301-Minerva-Copy
 This is a public copy of team 22 CSC301 winter 2017 project: Minerva
-Note: If you're in CSC301 don't even think about copying anything, you WILL be caught.
+- Note: If you're in CSC301 don't even think about copying anything, you WILL be caught.
 
 ## **Welcome!** This is *team 22*
 
