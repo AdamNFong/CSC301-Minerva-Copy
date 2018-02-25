@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Minvera</title>
+
+  <!-- CSS (load bootstrap from a CDN) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="../css/result.css">
+  <link rel="stylesheet" href="../css/timetablejs.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <!-- Local JS -->
+  <script type="text/javascript" src="../scripts/result.js"></script>
+  <script type="text/javascript" src="../scripts/timetable.js"></script>
+  <script type="text/javascript" src="../scripts/Sortable.min.js"></script>
+
+</head>
+
+<body class="container">
+
+  <div class="well" style="margin-top:10px;">
+    <h2>Here Are Your Timetables!</h2>
+    <h2><img src="../img/logo.png" height="137" width="100"></h2>
+  </div>
+
+  <div class="row" id="main">
+
+
+    <!-- Table -->
+    <div class="col-sm-9">
+      <div class="well">
+        Semester Configurations (Change what courses are in each semester):
+        <button type="button" class="btn btn-default" id="config-back"> < </button>
+        <span id="cur-config"> 0 </span> of <span id="max-config"> 0 </span>
+        <button type="button" class="btn btn-default" id="config-next"> > </button>
+        
+      </div>
+      
+      <div class="well">      
+        <h3>Fall</h3>
+        Timetables:
+        <button type="button" class="btn btn-default" id="fall-back"> < </button>
+        <span id="cur-fall"> 0 </span> of <span id="max-fall"> 0 </span>
+        <button type="button" class="btn btn-default" id="fall-next"> > </button>
+        <div class="timetable" id="fall-div">
+        </div>
+        
+      </div>
+        
+      <div class="well">
+        <h3>Winter</h3>
+        Timetables:
+        <button type="button" class="btn btn-default" id="winter-back"> < </button>
+        <span id="cur-winter"> 0 </span> of <span id="max-winter"> 0 </span>
+        <button type="button" class="btn btn-default" id="winter-next"> > </button>
+        <div class="timetable" id="winter-div">
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="col-sm-3">
+      <div class="well">
+        <h3>Sort</h3>
+        
+        <p>Drag and drop the criteria below in order of importance to you. </p>
+        
+        <ul id="sort-options" class="list-group">
+          <li class="list-group-item" id="days-off">
+            <input type="radio" name="days-off" value="MORE_DAYS_OFF"> <img src="../img/004-calendar-1.png"> More Days Off <br>
+            <input type="radio" name="days-off" value="LESS_DAYS_OFF"> Less Days Off <img src="../img/003-calendar-2.png"><br>
+            <input type="radio" name="days-off" value="None" checked> Don't Care
+          </li>
+          <li class="list-group-item" id="spacing">
+            <input type="radio" name="spacing" value="LESS_BREAKS"> <img src="../img/001-books.png"> Fewer Breaks <br>
+            <input type="radio" name="spacing" value="MORE_BREAKS"> More Breaks <img src="../img/002-desk.png"> <br>
+            <input type="radio" name="spacing" value="None" checked> Don't care
+          </li>
+          <li class="list-group-item" id="bird">
+            <input type="radio" name="bird" value="MORE_EVENINGS_OFF"> <img src="../img/007-bird.png"> More Nights Off <br>
+            <input type="radio" name="bird" value="MORE_MORNINGS_OFF"> More Mornings Off <img src="../img/008-owl-night-bird-outline.png"> <br>
+            <input type="radio" name="bird" value="None" checked> Don't care
+          </li>
+        </ul>
+        
+        <button type="button" class="btn btn-default" id="sort">Sort</button>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="well">
+    <button type="button" class="btn btn-default" id="back">Let's redesign</button>
+  </div>
+
+</body>
+
+<footer class="container-fluid">
+  <p>Icons made by <a href="http://www.freepik.com">Freepik</a>
+  from
+  <a href="http://www.flaticon.com">www.flaticon.com</a></p>
+</footer>
+
+</html>
